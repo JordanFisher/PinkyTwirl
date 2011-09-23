@@ -3,7 +3,9 @@ PinkyTwirl is an emacs/vim inspired key remapper for Windows, written in Python,
 There are three main goals:
 
 1. Provide a consistent experience across applications. Switching from your IDE to the Google search bar shouldn't mean my shortcuts for deleting a word disappears!
+
 2. Provide an easily modifiable Python file to allow changes to the keyboard shortcuts.
+
 3. (Heresy) The default shortcuts should be sane, and not require pinky contortions. The most used shorts do not use the pinky finger at all to access the Cntrl key, allowing the user's pinky to rest easy and chill out whenever it's not typing Z/A/Q.
 
 ###########################################
@@ -11,7 +13,9 @@ There are three main goals:
 ###########################################
 
 The main function key is Alt, rather than Cntrl. However, because of the nature of PinkyTwirl (intercepting keystrokes, mapping, and resending), I have currently been unable to correctly intercept all Alt messages before the active window receives them. To counteract this the function of Alt must be switched at the register level (perhaps a future release will fix this).
+
 I use KeyTweak (http://webpages.charter.net/krumsick/), and remap Left Alt to be F12. Choose any key to remap Alt to that you don't commonly use.
+
 Whatever key remapping you choose, note it in PinkyTwirl.py. The current line reads
 
 Func = 'F12'
@@ -22,7 +26,7 @@ Run PinkyTwirl.py and we're in action! Here's the basic breakdown of default sho
 ################ Tutorial #################
 ###########################################
 
-Hold Left Alt and then any of the following keys:
+Hold Left Alt (with your left thumb) and then any of the following keys:
   _   _        ___         ___  
  | | | |      |_ _|       / _ \ 
  | | | |       | |       | | | |

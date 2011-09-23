@@ -97,10 +97,10 @@ DefaultMap = {
   # File tabs
   '2' : {
     # Switch        # Switch back    # Close all but this  # Close     # Save
-    'J' : '^{TAB}', 'K' : '^+{TAB}', 'P' : '+^;',          'O' : '^;', 'I' : '^s' }
+    'J' : '^{TAB}', 'K' : '^+{TAB}', 'P' : '+^;',          'O' : '^;', 'I' : '^s' },
     
   AltSpace : {
-    'H' : '{ESC}{ESC}', 'J' : '^9^9', 'K' : '^8' },    
+    'H' : '{ESC}{ESC}', 'J' : '^9^9', 'K' : '^8' }    
   }
 
 SimpleMap = {
