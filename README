@@ -1,0 +1,87 @@
+PinkyTwirl is an emacs/vim inspired key remapper for Windows, written in Python, intended to give a consistent but powerful keyboard experience across applications.
+
+There are three main goals:
+
+1. Provide a consistent experience across applications. Switching from your IDE to the Google search bar shouldn't mean my shortcuts for deleting a word disappears!
+2. Provide an easily modifiable Python file to allow changes to the keyboard shortcuts.
+3. (Heresy) The default shortcuts should be sane, and not require pinky contortions. The most used shorts do not use the pinky finger at all to access the Cntrl key, allowing the user's pinky to rest easy and chill out whenever it's not typing Z/A/Q.
+
+###########################################
+############ Installation Note ############
+###########################################
+
+The main function key is Alt, rather than Cntrl. However, because of the nature of PinkyTwirl (intercepting keystrokes, mapping, and resending), I have currently been unable to correctly intercept all Alt messages before the active window receives them. To counteract this the function of Alt must be switched at the register level (perhaps a future release will fix this).
+I use KeyTweak (http://webpages.charter.net/krumsick/), and remap Left Alt to be F12. Choose any key to remap Alt to that you don't commonly use.
+Whatever key remapping you choose, note it in PinkyTwirl.py. The current line reads
+
+Func = 'F12'
+
+Run PinkyTwirl.py and we're in action! Here's the basic breakdown of default shortcuts:
+
+###########################################
+################ Tutorial #################
+###########################################
+
+Hold Left Alt and then any of the following keys:
+  _   _        ___         ___  
+ | | | |      |_ _|       / _ \ 
+ | | | |       | |       | | | |
+ | |_| |       | |       | |_| |
+  \___/       |___|       \___/ 
+  
+  Home          Up         End
+  
+      _        _  __       _     
+     | |      | |/ /      | |    
+  _  | |      | ' /       | |    
+ | |_| |      | . \       | |___ 
+  \___/       |_|\_\      |_____|
+
+  Left         Down        Right
+
+Hold 3 and then any of the keys UIOJKL to delete in that direction. Hold 4 and then any of the keys UIOJKL to highlight in that direction.
+
+Here's a more complete breakdown:
+  
+Alt + JKLI
+  Cursor motion. J is left, L is right. I is up, K is down.
+4 + JKLI
+  Highlight text by moving the cursor.
+3 + JKLI
+  Delete text in the given direction. J deletes left, L deletes right. I deletes the above line, K deletes the current line.
+
+Alt + NM
+  Move one word left (N). Move one word right (M).
+Alt + UO
+  Move to the start of a line (U). Move to the end of a line (O).
+Alt + YH
+  Move up/down 8 lines (Y/H)
+Alt + 90
+  Page up/down (9/0)
+
+The standard Alt motion keys work with 4 (highlighting) and 3 (deleting), for instance 3 + M deletes the next word, and 4 + U highlights everything to the start of the current line.
+
+###########################################
+########## Editing the Shortcuts ##########
+###########################################
+
+OK. So, you think my default remapping is crazy. That's fine, I think the default mapping in emacs is crazy. Let's move past ideology and move onto customization.
+
+Command shortcuts are currently stored in a dictionary in the PinkyTwirl.py file. A different dictionary can be defined for different applications (PinkyTwirl selects based on the name of the active window).
+
+For instance, suppose you want to delete to the end of a line. The default is 3+O (Delete + End). Let's use instead Alt+K (which in emacs deletes to the end of a sentence, which is similar).
+
+Find the following in the dictionary
+
+# Delete
+'3' : {
+
+Now delete the entry for 'O', which is
+
+'O' : '+{END}{DEL}'
+
+Great. Now let's go to the dictionary for Alt (labeled as Func, the very first dictionary). Now we can modify the mapping for 'k' to read
+
+'K' : '+{END}{DEL}'
+
+Reload the python script and we should be good to go!
