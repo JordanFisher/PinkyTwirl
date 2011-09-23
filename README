@@ -8,6 +8,8 @@ There are three main goals:
 
 3. (Heresy) The default shortcuts should be sane, and not require pinky contortions. The most used shorts do not use the pinky finger at all to access the Cntrl key, allowing the user's pinky to rest easy and chill out whenever it's not typing Z/A/Q.
 
+
+
 ###########################################
 ############ Installation Note ############
 ###########################################
@@ -20,7 +22,9 @@ Whatever key remapping you choose, note it in PinkyTwirl.py. The current line re
 
 Func = 'F12'
 
-Run PinkyTwirl.py and we're in action! Here's the basic breakdown of default shortcuts:
+One additional note. PinkyTwirl uses the library SendKeys to send the remapped keys on to the target application. Some wonkiness ensues if NumLocks is on, so it must be toggled off for now. Should be fixed in a future version.
+
+
 
 ###########################################
 ################ Tutorial #################
@@ -64,6 +68,11 @@ Alt + 90
   Page up/down (9/0)
 
 The standard Alt motion keys work with 4 (highlighting) and 3 (deleting), for instance 3 + M deletes the next word, and 4 + U highlights everything to the start of the current line.
+
+Currently CAPS LOCK is free. That is, it doesn't map to anything, including turning on CAPS. Hold Left and Right Shift to turn on CAPS. I haven't thought of anything good to use the remapped CAPS locks key for, but I'm open to suggestions (I'm hesitant to use it because it requires pinky strain).
+
+
+
 
 ###########################################
 ########## Editing the Shortcuts ##########
