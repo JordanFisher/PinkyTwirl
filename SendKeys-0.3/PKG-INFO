@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: SendKeys
+Version: 0.3
+Summary: An implementation of Visual Basic's SendKeys function
+Home-page: http://www.rutherfurd.net/python/sendkeys/
+Author: Ollie Rutherfurd
+Author-email: oliver@rutherfurd.net
+License: Python License
+Description: SendKeys is a Python module for Windows (R)
+        which can be used to send one or more keystrokes or keystroke
+        combinations to the active window.
+Platform: UNKNOWN
