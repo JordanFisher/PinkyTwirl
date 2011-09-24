@@ -77,12 +77,7 @@ Currently CAPS LOCK is free. That is, it doesn't map to anything, including turn
 ########## Editing the Shortcuts ##########
 ###########################################
 
-
-###########################################
-########## Editing the Shortcuts ##########
-###########################################
-
-OK. So, you think my default remapping is crazy. That's fine, I think the default mapping in emacs is crazy. Let's move past ideology and move onto customization.
+OK. You think my default remapping is crazy. That's fine, I think the default mapping in emacs is crazy. Let's move past ideology and move onto customization.
 
 Command shortcuts are currently stored in a dictionary in the PinkyTwirl.py file. A different dictionary can be defined for different applications (PinkyTwirl selects based on the name of the active window).
 
