@@ -9,7 +9,6 @@ There are three main goals:
 3. (Heresy) The default shortcuts should be sane, and not require pinky contortions. The most used shorts do not use the pinky finger at all to access the Cntrl key, allowing the user's pinky to rest easy and chill out whenever it's not typing Z/A/Q.
 
 
-
 ###########################################
 ############ Installation Note ############
 ###########################################
@@ -23,7 +22,6 @@ Whatever key remapping you choose, note it in PinkyTwirl.py. The current line re
 Func = 'F12'
 
 One additional note. PinkyTwirl uses the library SendKeys to send the remapped keys on to the target application. Some wonkiness ensues if NumLocks is on, so it must be toggled off for now. Should be fixed in a future version.
-
 
 
 ###########################################
@@ -49,15 +47,8 @@ Hold Left Alt (with your left thumb) and then any of the following keys:
 
 Hold 3 and then any of the keys UIOJKL to delete in that direction. Hold 4 and then any of the keys UIOJKL to highlight in that direction.
 
-Here's a more complete breakdown:
+Additional text shortcuts:
   
-Alt + JKLI
-  Cursor motion. J is left, L is right. I is up, K is down.
-4 + JKLI
-  Highlight text by moving the cursor.
-3 + JKLI
-  Delete text in the given direction. J deletes left, L deletes right. I deletes the above line, K deletes the current line.
-
 Alt + NM
   Move one word left (N). Move one word right (M).
 Alt + UO
@@ -69,9 +60,22 @@ Alt + 90
 
 The standard Alt motion keys work with 4 (highlighting) and 3 (deleting), for instance 3 + M deletes the next word, and 4 + U highlights everything to the start of the current line.
 
+Additional non-text shortcuts:
+
+Change tab is set to 2+J and 2+K. This works, by default, in Visual Studios as well as Chrome.
+
+Save file is 2+I. Close file is 2+O (Visual Studios). In Chrome 2+I makes a new tab, and 2+O closes the current tab.
+
+Alt+E is Undo. Alt+R is Redo.
+
+The 4 key is used for selecting. It is also used for copying/pasting/cutting. 4+R copies. 4+F cuts. 4+T pastes. Usually pasting is down immediately after navigating (using Alt), so there is also an Alt shortcut, Alt+W
+
 Currently CAPS LOCK is free. That is, it doesn't map to anything, including turning on CAPS. Hold Left and Right Shift to turn on CAPS. I haven't thought of anything good to use the remapped CAPS locks key for, but I'm open to suggestions (I'm hesitant to use it because it requires pinky strain).
 
 
+###########################################
+########## Editing the Shortcuts ##########
+###########################################
 
 
 ###########################################
