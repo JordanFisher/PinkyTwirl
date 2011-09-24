@@ -6,14 +6,14 @@ There are three main goals:
 
 2. Provide an easily modifiable Python file to allow changes to the keyboard shortcuts.
 
-3. (Heresy) The default shortcuts should be sane, and not require pinky contortions. The most used shorts do not use the pinky finger at all to access the Cntrl key, allowing the user's pinky to rest easy and chill out whenever it's not typing Z/A/Q.
+3. (Heresy) The default shortcuts should be sane, and not require pinky contortions. The most used shorts do not use the pinky finger at all to access the Ctrl key, allowing the user's pinky to rest easy and chill out whenever it's not typing Z/A/Q.
 
 
 ###########################################
 ############ Installation Note ############
 ###########################################
 
-The main function key is Alt, rather than Cntrl. However, because of the nature of PinkyTwirl (intercepting keystrokes, mapping, and resending), I have currently been unable to correctly intercept all Alt messages before the active window receives them. To counteract this the function of Alt must be switched at the register level (perhaps a future release will fix this).
+The main function key is Alt, rather than Ctrl. However, because of the nature of PinkyTwirl (intercepting keystrokes, mapping, and resending), I have currently been unable to correctly intercept all Alt messages before the active window receives them. To counteract this the function of Alt must be switched at the register level (perhaps a future release will fix this).
 
 I use KeyTweak (http://webpages.charter.net/krumsick/), and remap Left Alt to be F12. Choose any key to remap Alt to that you don't commonly use.
 
@@ -28,7 +28,7 @@ One additional note. PinkyTwirl uses the library SendKeys to send the remapped k
 ################ Tutorial #################
 ###########################################
 
-Hold Left Alt (with your left thumb) and then any of the following keys:
+Hold Left Alt (I use my left thumb) and then any of the following keys:
   _   _        ___         ___  
  | | | |      |_ _|       / _ \ 
  | | | |       | |       | | | |
@@ -68,7 +68,7 @@ Save file is 2+I. Close file is 2+O (Visual Studios). In Chrome 2+I makes a new 
 
 Alt+E is Undo. Alt+R is Redo.
 
-The 4 key is used for selecting. It is also used for copying/pasting/cutting. 4+R copies. 4+F cuts. 4+T pastes. Usually pasting is down immediately after navigating (using Alt), so there is also an Alt shortcut, Alt+W
+The 4 key is used for selecting. It is also used for copying/pasting/cutting. 4+R copies. 4+F cuts. 4+T pastes. Usually pasting is done immediately after navigating (using Alt), so there is also an Alt shortcut, Alt+W
 
 Currently CAPS LOCK is free. That is, it doesn't map to anything, including turning on CAPS. Hold Left and Right Shift to turn on CAPS. I haven't thought of anything good to use the remapped CAPS locks key for, but I'm open to suggestions (I'm hesitant to use it because it requires pinky strain).
 
